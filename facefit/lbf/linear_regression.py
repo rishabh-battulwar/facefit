@@ -9,7 +9,9 @@ from facefit import util
 from facefit.base import RegressorBuilder
 
 dirname = path.dirname(path.abspath(__file__))
-site.addsitedir(path.join(dirname, '../external/liblinear/python'))
+# site.addsitedir(path.join(dirname, '../external/liblinear/python'))
+import sys
+sys.path.append(path.join(dirname, '../external/liblinear/python'))
 import liblinearutil
 
 

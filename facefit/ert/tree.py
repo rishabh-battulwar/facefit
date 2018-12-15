@@ -110,7 +110,7 @@ class RegressionTree(Regressor):
         for k in xrange(self.depth-1):
             i, j, thresh = self.splits[node]
             node = 2*node+1
-            if pixels[i] - pixels[j] > thresh:
+            if pixels[int(i)] - pixels[int(j)] > thresh:
                 node += 1
         return node - len(self.splits)
 
