@@ -19,8 +19,8 @@ def add_landmarks(mat, shape):
 model = hickle.load(sys.argv[1], safe=False)
 face_detector = menpodetect.dlib.load_dlib_frontal_face_detector()
 
-WIDTH=640
-HEIGHT=480
+WIDTH=480
+HEIGHT=640
 
 cap = cv2.VideoCapture(0)
 # cap = cv2.VideoCapture('/Users/rishabhbattulwar/Desktop/tmp/tracking_arcsoft/kiran_out/preview.mov')
